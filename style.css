@@ -1,0 +1,178 @@
+
+    .logo {
+        position: absolute;
+        top: 18px;
+        padding: 4px;
+        background: url(logo.png) no-repeat center center/cover;
+        height: 50px;
+        width: 50px;
+
+    }
+
+    .company_name {
+        position: absolute;
+        left: 69px;
+        width: 250px;
+        border-radius: 10px;
+        background-color: rgb(204, 227, 227);
+    }
+
+    .facts {
+        border-radius: 10px;
+        display: flex;
+        height: 400px;
+        width: 350px;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        margin-top: 150px;
+        margin-left: 200px;
+        animation-name: background_image;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes background_image {
+        0% {
+            background: url(facts1.png) no-repeat center center/cover;
+        }
+
+        25% {
+            background: url(facts2.png) no-repeat center center/cover;
+        }
+
+        75% {
+            background: url(facts3.png) no-repeat center center/cover;
+        }
+
+        100% {
+            background: url(facts4.png) no-repeat center center/cover;
+        }
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        margin: 5px;
+        margin-top: 24px;
+        margin-right: 19px;
+        border-radius: 15px;
+        font-style: italic;
+        font-size: large;
+        font-weight: bold;
+
+    }
+
+    .navbar a:hover {
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .container::before {
+        content: "";
+        position: absolute;
+        background: url(background.png) no-repeat center center/cover;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        opacity: 0.89;
+        z-index: -1;
+    }
+
+    .order {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        margin-top: 160px;
+        margin-right: -407px;
+
+    }
+
+    .order input[type="button"] {
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px;
+    }
+
+    .order input[type="button"]:hover {
+        background-color: rgb(13, 249, 80);
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px;
+    }
+
+    .orderlink {
+        color: black;
+        animation-name: textcolor;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes textcolor {
+        0% {
+            color: red;
+        }
+
+        10% {
+            color: rgb(17, 255, 0);
+        }
+
+        20% {
+            color: rgb(57, 29, 217);
+        }
+
+        30% {
+            color: rgb(255, 132, 0);
+        }
+
+        40% {
+            color: rgb(63, 19, 166);
+        }
+
+        50% {
+            color: rgb(0, 255, 132);
+        }
+
+        60% {
+            color: rgb(0, 255, 42);
+        }
+
+        70% {
+            color: rgb(236, 74, 134);
+        }
+
+        80% {
+            color: rgb(255, 0, 255);
+        }
+
+        90% {
+            color: rgb(38, 88, 110);
+        }
+
+        100% {
+            color: rgb(0, 255, 213);
+        }
+    }
+
+    #order1 {
+        position: absolute;
+        border-radius: 850px;
+        border: 5px solid rgb(70, 72, 72);
+        z-index: -1;
+        height: 400px;
+        width: 400px;
+        opacity: 1;
+    }
+
+    .navbar {
+        display: flex;
+        float: right;
+    }
